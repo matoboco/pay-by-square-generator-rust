@@ -1,5 +1,5 @@
 use actix_cors::Cors;
-use actix_web::{get, post, web, App, HttpResponse, HttpServer, Responder};
+use actix_web::{error::ResponseError, get, post, web, App, HttpResponse, HttpServer, Responder};
 use pay_by_square_generator::{
     generate_code_only, generate_pay_by_square_qr, CodeResponse, PaymentRequest, QrOptions,
 };
